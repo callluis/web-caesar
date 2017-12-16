@@ -53,7 +53,6 @@ def index():
 def encrypt():
     a = int(request.form['rot'])
     b = request.form['text']
-
     c = rotate_string(b, a)
 
     return form.format(c)
